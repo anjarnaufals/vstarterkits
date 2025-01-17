@@ -48,3 +48,27 @@ class MockSomethingRepository extends _i1.Mock
           )
           as _i3.Future<_i4.Either<_i2.Failure, _i2.BaseRes<_i2.Something>>>);
 }
+
+/// A class which mocks [SomethingRepositoryWithoutBaseRes].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockSomethingRepositoryWithoutBaseRes extends _i1.Mock
+    implements _i2.SomethingRepositoryWithoutBaseRes {
+  MockSomethingRepositoryWithoutBaseRes() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i3.Future<_i4.Either<_i2.Failure, _i2.Something>> getSomething() =>
+      (super.noSuchMethod(
+            Invocation.method(#getSomething, []),
+            returnValue:
+                _i3.Future<_i4.Either<_i2.Failure, _i2.Something>>.value(
+                  _i5.dummyValue<_i4.Either<_i2.Failure, _i2.Something>>(
+                    this,
+                    Invocation.method(#getSomething, []),
+                  ),
+                ),
+          )
+          as _i3.Future<_i4.Either<_i2.Failure, _i2.Something>>);
+}
